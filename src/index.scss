@@ -1,0 +1,32 @@
+:root {
+    font-family: rival-sans, sans-serif;
+  
+    --darkmode-background: #1d1d1d;
+    --darkmode-text:#fff;
+    --darkmode-element: #181818;
+    --darkmode-shadow: #ffffff12;
+}
+  
+  
+*,
+*:after,
+*::before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+  
+#root{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: unset;
+}
+
+body{
+    background-color: var(--darkmode-background);
+    color: var(--darkmode-text);
+}
