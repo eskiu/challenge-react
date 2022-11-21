@@ -29,4 +29,112 @@
 body{
     background-color: var(--darkmode-background);
     color: var(--darkmode-text);
-}
+    width: 100%;
+
+    .main-container{
+      display: flex;
+      justify-content: center;
+      .content-container{
+        width: 80%;
+        .cliente{
+          text-transform: uppercase;
+          text-align: center;
+        }
+        .testeador{
+          text-align: center;
+          padding-bottom: 1rem;
+        }
+        .player-wrapper {
+          position: relative;
+          padding-top: 1rem;
+          display: flex;
+          justify-content: center;
+          .react-player {
+            margin: 0;
+          }
+        }
+        .transcription-p{
+          background-color: var(--darkmode-element);
+          padding: .5rem .1rem;
+          border-radius: 5px;
+          margin-top: 1rem;
+          cursor: pointer;
+          h2{
+            text-align: start;
+            padding: 0 .5rem;
+          }
+          p{
+            margin-top: 2rem;
+            padding: 0 .5rem;
+          }
+          button{
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: var(--darkmode-text);
+            font-weight: bold;
+            font-size: 1em;
+            margin-top: 1rem;
+            padding: 0 .5rem;
+          }
+        }
+        .transcription-p:hover{
+          background-color: #302f2f;
+        }
+        .tareas{
+          padding: 1rem .5rem;
+          h2{
+            padding-bottom: 2rem;
+          }
+          .escenario{
+            padding-bottom: 1rem;
+          }
+          .showalltasks{
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            width: fit-content;
+            p{
+              padding-right: .5rem;
+              
+            }
+            .svg{
+              display: flex;
+              transition: all 0.1s;
+              svg{
+                width: 18px;
+                fill: var(--darkmode-text);
+              }
+            }
+          }
+          .showalltasks:hover{
+            background-color: #302f2f;
+            cursor: pointer;
+          }
+          .preguntas-container{
+            border-top:1px solid var(--darkmode-text) ;
+            padding: 1rem 0;
+            .task-header{
+              h3{
+                padding-right: 15px;
+              }
+            }
+            .task-body{
+              p{
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+        .rotate180{
+          transform: rotate(180deg);
+          transition: all 0.1s;
+        }
+      }
+      
+    }
+  }
+  
+  
