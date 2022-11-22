@@ -1,12 +1,10 @@
 :root {
     font-family: rival-sans, sans-serif;
-  
     --darkmode-background: #1d1d1d;
     --darkmode-text:#fff;
     --darkmode-element: #181818;
     --darkmode-shadow: #ffffff12;
 }
-  
   
 *,
 *:after,
@@ -30,7 +28,40 @@ body{
     background-color: var(--darkmode-background);
     color: var(--darkmode-text);
     width: 100%;
-
+    a{
+      text-decoration: none;
+      color: var(--darkmode-text);
+    }
+    .home-container{
+      .navbar-container{
+        height: 10vh;
+        display: flex;
+        align-items: center;justify-content: center;
+      }
+      .review-containers{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        a{
+          font-size: 2em;
+          font-weight: bold;
+          padding: 2rem;
+          margin: 2rem;
+          border: 5px solid var(--darkmode-element);
+          text-align: center;
+          transition: all 0.1s;
+        }
+        a:hover{
+          background-color: #302f2f;
+          transition: all 0.1s;
+        }
+        p{
+          font-size: 0.5em;
+        }
+      }
+    }
     .main-container{
       display: flex;
       justify-content: center;
@@ -63,7 +94,7 @@ body{
             text-align: start;
             padding: 0 .5rem;
           }
-          p{
+          div{
             margin-top: 2rem;
             padding: 0 .5rem;
           }
@@ -92,10 +123,12 @@ body{
           .showalltasks{
             display: flex;
             align-items: center;
-            padding: 5px;
+            padding: 10px;
             margin-bottom: 1rem;
-            border-radius: 10px;
+            border-radius: 5px;
             width: fit-content;
+            background-color: var(--darkmode-element);
+            border: 1px solid var(--darkmode-text);
             p{
               padding-right: .5rem;
               
@@ -127,6 +160,9 @@ body{
               }
             }
           }
+          .preguntas-container:last-child{
+            border-bottom: 1px solid var(--darkmode-text);
+          }
         }
         .rotate180{
           transform: rotate(180deg);
@@ -134,6 +170,24 @@ body{
         }
       }
       
+    }
+    .gohome{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      a{
+        border: 1px solid var(--darkmode-text);
+        border-radius: 2px;
+        font-size: 1em;
+        padding: 3px 10px;
+        transition: all 0.1s;
+      }
+      a:hover{
+        background-color: #302f2f;
+        transition: all 0.1s;
+      }
     }
   }
   
