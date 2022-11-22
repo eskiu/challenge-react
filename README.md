@@ -4,8 +4,14 @@
 
 This is a challenge for Greydive. Was do it with React.js (vite).
 
-## How to use
+## How to start
 
-1. `yarn`
+Install all the project dependencies with:
+```
+yarn
+```
 
-2. `yarn dev` to see the project in local develop environment.
+And start the development server with:
+```
+yarn dev
+```
